@@ -11,12 +11,13 @@ public class Hooks {
 	public static WebDriver driver;
 	@BeforeAll
 	public static void setup() {
+		
 		driver=BaseClass.setupDriver();
 		driver.get("https://www.coursera.org");
 	}
 	
 	@AfterAll
 	public static void tearDown() {
-		//driver.quit();
+		driver.quit();
 	}
 }

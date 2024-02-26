@@ -9,6 +9,8 @@ import java.time.Duration;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
@@ -26,10 +28,12 @@ public class BaseClass {
 
 	public static WebDriver driver;
 	public static Properties p;
+	public static Logger logger;
 	public  HomePage hp;
 	public  CoursesPage cp;
 	public  CourseDetailsPage cdp;
 	public static  WebDriver setupDriver() {
+		logger=LogManager.getLogger();
 		
 		String browser=getProperties().getProperty("browser");
 		if(getProperties().getProperty("execution_env").equalsIgnoreCase("remote"))
