@@ -113,5 +113,7 @@ public class CoursesPage extends BasePage {
 		
 	}
 	
-	
+	public void closePopup() {
+		//closeBtn.click();
+	}
 }

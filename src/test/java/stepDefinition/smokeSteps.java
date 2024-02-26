@@ -150,7 +150,7 @@ public class smokeSteps extends BaseClass{
 	public void user_should_see_all_available_language_options() {
 		cp=new CoursesPage(driver);
 	    boolean flag=cp.getAllLanguage().size()>0;
-	    cp.closePopup();
+	   
 	    Assert.assertEquals(flag,true);
 	}
 
