@@ -1,0 +1,69 @@
+16:11:40.692 [main] INFO  factory.BaseClass - Setting up the local environment
+16:13:10.291 [main] INFO  factory.BaseClass - Searching For Web Development Course
+16:21:24.898 [main] INFO  factory.BaseClass - Searching For Web Development Course
+16:22:18.981 [main] INFO  factory.BaseClass - Validating First Course Details
+16:22:58.405 [main] INFO  factory.BaseClass - Validating Second Course Details
+16:26:36.471 [main] INFO  factory.BaseClass - valid Form Registration
+16:27:03.223 [main] INFO  factory.BaseClass - Capturing Message
+16:27:48.682 [main] INFO  factory.BaseClass - invalid Form Registration
+16:28:13.347 [main] INFO  factory.BaseClass - Capturing Message
+16:31:21.876 [main] INFO  factory.BaseClass - invalid Form Registration
+16:31:43.707 [main] INFO  factory.BaseClass - Capturing Message
+16:32:00.089 [main] INFO  factory.BaseClass - invalid Form Registration
+16:32:30.798 [main] INFO  factory.BaseClass - Capturing Message
+16:33:16.087 [main] INFO  factory.BaseClass - invalid Form Registration
+16:33:41.012 [main] INFO  factory.BaseClass - Capturing Message
+16:34:26.768 [main] INFO  factory.BaseClass - invalid Form Registration
+16:34:52.790 [main] INFO  factory.BaseClass - Capturing Message
+16:48:21.507 [main] INFO  factory.BaseClass - Setting up the local environment
+16:49:03.413 [main] INFO  factory.BaseClass - Searching For Web Development Course
+16:51:21.360 [main] INFO  factory.BaseClass - Searching For Web Development Course
+16:51:57.495 [main] INFO  factory.BaseClass - Validating First Course Details
+16:52:15.863 [main] INFO  factory.BaseClass - Validating Second Course Details
+16:53:08.362 [main] INFO  factory.BaseClass - valid Form Registration
+16:53:35.571 [main] INFO  factory.BaseClass - Capturing Message
+16:53:51.919 [main] INFO  factory.BaseClass - invalid Form Registration
+16:54:16.925 [main] INFO  factory.BaseClass - Capturing Message
+16:55:42.882 [main] INFO  factory.BaseClass - invalid Form Registration
+16:56:00.950 [main] INFO  factory.BaseClass - Capturing Message
+16:56:11.878 [main] INFO  factory.BaseClass - invalid Form Registration
+16:56:36.387 [main] INFO  factory.BaseClass - Capturing Message
+16:56:46.532 [main] INFO  factory.BaseClass - invalid Form Registration
+16:57:10.843 [main] INFO  factory.BaseClass - Capturing Message
+16:57:20.776 [main] INFO  factory.BaseClass - invalid Form Registration
+16:57:47.383 [main] INFO  factory.BaseClass - Capturing Message
+17:05:55.350 [main] INFO  factory.BaseClass - Setting up the local environment
+17:06:21.010 [main] INFO  factory.BaseClass - Searching For Web Development Course
+17:08:00.557 [main] INFO  factory.BaseClass - Searching For Web Development Course
+17:08:30.571 [main] INFO  factory.BaseClass - Validating First Course Details
+17:08:45.451 [main] INFO  factory.BaseClass - Validating Second Course Details
+17:09:41.519 [main] INFO  factory.BaseClass - valid Form Registration
+17:09:58.917 [main] INFO  factory.BaseClass - Capturing Message
+17:10:14.198 [main] INFO  factory.BaseClass - invalid Form Registration
+17:10:40.079 [main] INFO  factory.BaseClass - Capturing Message
+17:12:11.892 [main] INFO  factory.BaseClass - invalid Form Registration
+17:12:38.297 [main] INFO  factory.BaseClass - Capturing Message
+17:12:49.557 [main] INFO  factory.BaseClass - invalid Form Registration
+17:13:04.704 [main] INFO  factory.BaseClass - Capturing Message
+17:13:14.837 [main] INFO  factory.BaseClass - invalid Form Registration
+17:13:41.326 [main] INFO  factory.BaseClass - Capturing Message
+17:13:55.054 [main] INFO  factory.BaseClass - invalid Form Registration
+17:14:17.647 [main] INFO  factory.BaseClass - Capturing Message
+12:28:24.945 [main] INFO  Chrome - Setting up the local environment
+12:42:00.555 [main] INFO  factory.BaseClass - Setting up the local environment
+12:52:28.663 [main] INFO  factory.BaseClass - Setting up the local environment
+12:52:53.225 [main] INFO  factory.BaseClass - Searching For Web Development Course
+12:54:17.812 [main] INFO  factory.BaseClass - Searching For Web Development Course
+12:54:41.496 [main] INFO  factory.BaseClass - Validating First Course Details
+12:54:54.370 [main] INFO  factory.BaseClass - Validating Second Course Details
+12:55:35.345 [main] INFO  factory.BaseClass - valid Form Registration
+12:56:04.656 [main] INFO  factory.BaseClass - Capturing Message
+12:56:18.837 [main] INFO  factory.BaseClass - invalid Form Registration
+12:56:38.395 [main] INFO  factory.BaseClass - Capturing Message
+12:58:01.121 [main] INFO  factory.BaseClass - invalid Form Registration
+12:58:26.770 [main] INFO  factory.BaseClass - Capturing Message
+12:58:36.729 [main] INFO  factory.BaseClass - invalid Form Registration
+12:58:56.579 [main] INFO  factory.BaseClass - Capturing Message
+12:59:07.720 [main] INFO  factory.BaseClass - invalid Form Registration
+12:59:27.447 [main] INFO  factory.BaseClass - Capturing Message
+12:59:37.806 [main] INFO  factory.BaseClass - invalid Form Registration

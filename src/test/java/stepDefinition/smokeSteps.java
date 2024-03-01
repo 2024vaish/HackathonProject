@@ -12,7 +12,8 @@ import pageObjects.HomePage;
 public class smokeSteps extends BaseClass{
 	HomePage hp;
 	CoursesPage cp;
-
+	
+	//launch the browser
 	@Given("user should launch the browser")
 	public void user_should_launch_the_browser() {
 		
@@ -25,11 +26,12 @@ public class smokeSteps extends BaseClass{
 		Assert.assertEquals(flag, true);
 	  
 	}
-
+	//To navigate to url
 	@When("user navigates to url")
 	public void user_navigates_to_url() {
 
 		driver.get("https://www.coursera.org/");
+		 	
 	}
 
 	@Then("Web page should load")
@@ -51,7 +53,7 @@ public class smokeSteps extends BaseClass{
 		hp=new HomePage(driver);
 		hp.clickNav1();
 	    String s=driver.getTitle();
-	   // Assert.assertEquals(s, "Coursera | Degrees, Certificates, & Free Online Courses");
+	    Assert.assertEquals(s, p.getProperty("HomeTitle"));
 	}
 
 	@When("user search for {string} course")
@@ -65,23 +67,8 @@ public class smokeSteps extends BaseClass{
 	public void user_should_see_all_courses() {
 		cp=new CoursesPage(driver);
 	    boolean flag=cp.checkResults();
+	    Assert.assertEquals(flag, false);
 	}
-	
-
-	@Given("user should see all the courses")
-	public void user_should_see_all_the_courses() {
-		cp=new CoursesPage(driver);
-	    boolean flag=cp.checkResults();
-	   
-	}
-
-	@When("user clicks on show more link")
-	public void user_clicks_on_show_more_link() {
-		cp=new CoursesPage(driver);
-		cp.clickShowMore();
-	   
-	}
-
 
 	@When("user clicks on for individual link")
 	public void user_clicks_on_for_individual_link() {
@@ -93,7 +80,7 @@ public class smokeSteps extends BaseClass{
 	public void user_should_see_courseera_homepage() {
 		hp.clickNav1();
 		String s=driver.getTitle();
-	    Assert.assertEquals(s, "Coursera | Degrees, Certificates, & Free Online Courses");
+		Assert.assertEquals(s, p.getProperty("HomeTitle"));	
 	}
 
 	@When("user clicks on for buiseness link")
@@ -105,7 +92,7 @@ public class smokeSteps extends BaseClass{
 	@Then("user should see buiseness page.")
 	public void user_should_see_buiseness_page() {
 		String s=driver.getTitle();
-	    Assert.assertEquals(s, "Employee Training and Development Programs | Coursera for Business");
+		Assert.assertEquals(s, p.getProperty("BuisenessTitle"));
 	}
 
 	@When("user clicks on for universities link")
@@ -117,35 +104,23 @@ public class smokeSteps extends BaseClass{
 	@Then("user should see for campus page")
 	public void user_should_see_for_campus_page() {
 		String s=driver.getTitle();
-	    Assert.assertEquals(s, "Online Learning Platform for Universities | Coursera");
+		Assert.assertEquals(s, p.getProperty("UniversityTitle"));
+	   
+	}
+	@Given("user should see all the courses")
+	public void user_should_see_all_the_courses() {
+		cp=new CoursesPage(driver);
+	    boolean flag=cp.checkResults();
+	    Assert.assertEquals(flag, false);
 	   
 	}
 
-	@Given("user should see buieness page")
-	public void user_should_see_buieness_page() {
-		hp=new HomePage(driver);
-		hp.clickNav2();
-		String s=driver.getTitle();
-	    Assert.assertEquals(s, "Employee Training and Development Programs | Coursera for Business");
-	    
+	@When("user clicks on show more link")
+	public void user_clicks_on_show_more_link() {
+		cp=new CoursesPage(driver);
+		cp.clickShowMore();
+	   
 	}
-
-	@Then("user should see  solutions options")
-	public void user_should_see_solutions_options() {
-		hp=new HomePage(driver);
-	    boolean flag=hp.solutionDisplay();
-	    hp.clickSolutions();
-	    Assert.assertEquals(flag, true);
-	}
-
-	@Given("user should click on solution dropdown")
-	public void user_should_click_on_solution_dropdown() {
-		hp=new HomePage(driver);
-		hp.clickSolutions();
-		boolean flag=hp.solutionClicked();   
-	}
-
-	
 	@Then("user should see all available language options")
 	public void user_should_see_all_available_language_options() {
 		cp=new CoursesPage(driver);
@@ -166,6 +141,33 @@ public class smokeSteps extends BaseClass{
 		Assert.assertEquals(flag, true);
 	    
 	}
+	
+
+
+	@Given("user should see buieness page")
+	public void user_should_see_buieness_page() {
+		hp=new HomePage(driver);
+		hp.clickNav2();
+		String s=driver.getTitle();
+		Assert.assertEquals(s, p.getProperty("BuisenessTitle"));
+	    
+	}
+
+	@Then("user should see  solutions options")
+	public void user_should_see_solutions_options() {
+		hp=new HomePage(driver);
+	    boolean flag=hp.solutionDisplay();
+	    hp.clickSolutions();
+	    Assert.assertEquals(flag, true);
+	}
+
+	@Given("user should click on solution dropdown")
+	public void user_should_click_on_solution_dropdown() {
+		hp=new HomePage(driver);
+		hp.clickSolutions();
+	}
+
+	
 	
 	@When("user clicks on the solution dropdown")
 	public void user_clicks_on_the_solution_dropdown() {

@@ -43,6 +43,7 @@ public class formSteps extends BaseClass{
 
 	@When("user fills the form with {string},{string},{string},{string},{string},{string},{string}")
 	public void user_fills_the_form(String fname,String lname,String email,String phone,String iname,String needs,String status) {
+		logger.info(status+" Form Registration");
 		f.setFirstName(fname);
 		f.setLastName(lname);
 		f.setEmail(email);
@@ -67,8 +68,9 @@ public class formSteps extends BaseClass{
 		f.clickSubmit();  
 	}
 
-	@Then("user captures {string} message")
-	public void user_captures_the_message(String str) {
+	@Then("user should capture {string} message")
+	public void user_should_capture_the_message(String str) {
+		logger.info("Capturing Message");
 		System.out.print("\n*********************Message after submiting "+str+" data*********************\n");
 		String s=f.getMsg();
 		takeScreenshot(str+"Message");
@@ -77,10 +79,7 @@ public class formSteps extends BaseClass{
 	    
 	}
 	
-	@Then("user should close the browser")
-	public void user_should_close_the_browser() {
-		//driver.quit();
-	}
+	
 	
 	
 	

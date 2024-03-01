@@ -20,6 +20,9 @@ public class CourseDetailsPage extends BasePage{
 	@FindBy(xpath="//*[@id='rendered-content']/div/main/section[2]/div/div/div[2]/div/div/section/div[2]/div[3]/div[1]")
 	WebElement duration;
 	
+	@FindBy(xpath="//*[@data-e2e='hero-module']//h1")
+	WebElement heading;
+	
 	
 	
 	public void switchToWindow(int i) {
@@ -30,9 +33,10 @@ public class CourseDetailsPage extends BasePage{
 	public String getCourseName() {
 		try {
 			Thread.sleep(5000);
+			
+
 		} catch (InterruptedException e) {}
 		String s=courseName.getText();
-		
 		return s;
 	}
 	
@@ -43,4 +47,9 @@ public class CourseDetailsPage extends BasePage{
 	public String getCourseDuration() {
 		return duration.getText();
 	}
+	public String getHeading()
+	{
+		return heading .getText();
+	}
 }
+

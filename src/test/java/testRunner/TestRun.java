@@ -1,13 +1,14 @@
+//This File  runs as JUNIT Test
 package testRunner;
 
 import org.junit.runner.RunWith;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
-//import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = {".\\src\\test\\resources\\FeatureFiles\\Main.feature"},
+@CucumberOptions(features = {".\\src\\test\\resources\\FeatureFiles\\f001_Smoke.feature",".\\src\\test\\resources\\FeatureFiles\\f002_Main.feature",".\\src\\test\\resources\\FeatureFiles\\f003_Regression.feature"},
 							
 				//features={"@target/rerun.txt"},
 				glue = "stepDefinition", 

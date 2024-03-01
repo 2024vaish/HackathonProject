@@ -1,0 +1,53 @@
+16:44:31.293 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+16:44:31.401 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
+16:44:31.404 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
+16:44:31.406 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
+16:44:31.407 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
+16:44:31.409 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
+16:44:31.409 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
+16:44:31.410 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/theme/theme1.xml'
+16:44:31.411 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
+16:44:31.413 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
+16:44:31.414 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet2.xml'
+16:44:31.414 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet3.xml'
+16:45:59.725 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+16:45:59.744 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+16:46:00.502 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
+16:46:00.523 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
+16:46:00.529 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
+16:46:00.530 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
+16:46:00.535 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
+16:46:00.539 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
+16:46:00.541 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/theme/theme1.xml'
+16:46:00.543 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
+16:46:00.548 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
+16:46:00.549 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet2.xml'
+16:46:00.571 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet3.xml'
+16:46:00.781 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+16:46:00.784 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+16:46:00.932 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
+16:46:00.935 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
+16:46:00.940 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
+16:46:00.940 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
+16:46:00.944 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
+16:46:00.945 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
+16:46:00.946 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/theme/theme1.xml'
+16:46:00.947 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
+16:46:00.952 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
+16:46:00.953 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet2.xml'
+16:46:00.954 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet3.xml'
+16:48:08.925 [main] INFO  factory.BaseClass - valid Form Registration
+16:48:32.784 [main] INFO  factory.BaseClass - Capturing Message
+16:49:33.104 [main] INFO  factory.BaseClass - invalid Form Registration
+16:49:56.833 [main] INFO  factory.BaseClass - Capturing Message
+16:59:15.643 [main] INFO  factory.BaseClass - Setting up the local environment
+17:00:05.788 [main] INFO  factory.BaseClass - Searching For Web Development Course
+17:01:22.645 [main] INFO  factory.BaseClass - Validating First Course Details
+17:02:26.855 [main] INFO  factory.BaseClass - Validating Second Course Details
+17:06:05.695 [main] INFO  factory.BaseClass - valid Form Registration
+17:06:26.208 [main] INFO  factory.BaseClass - Capturing Message
+17:07:11.487 [main] INFO  factory.BaseClass - invalid Form Registration
+17:07:34.869 [main] INFO  factory.BaseClass - Capturing Message
+17:11:28.778 [main] INFO  factory.BaseClass - Setting up the remote environment
+17:22:53.228 [main] INFO  factory.BaseClass - Setting up the remote environment
+17:24:29.260 [main] INFO  factory.BaseClass - Setting up the remote environment

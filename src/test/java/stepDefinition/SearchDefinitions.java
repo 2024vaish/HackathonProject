@@ -1,24 +1,22 @@
 package stepDefinition;
 
-import org.openqa.selenium.WebDriver;
-
 import factory.BaseClass;
 import io.cucumber.java.en.*;
 import pageObjects.*;
 
 public class SearchDefinitions extends BaseClass{
-	//sWebDriver driver = BaseClass.setupDriver();
 	HomePage hp;
 	CoursesPage cp;
 	CourseDetailsPage cdp;
     
 	@Given("user should be on courseera homepage")
 	public void user_should_be_on_courseera_homepage() {
-		
-		takeScreenshot("HomePage");	
-	    
+		logger.info("Searching For Web Development Course");
+		driver.get("https://www.coursera.org");
+		takeScreenshot("HomePage");	 
 	}
-
+	
+	//To Search For WebDevelopment Course
 	@When("user search for {string} courses")
 	public void user_search_for_courses(String string) {
 		hp=new HomePage(driver);
@@ -27,7 +25,7 @@ public class SearchDefinitions extends BaseClass{
 		hp.clickSearchIcon();
 	}
 	
-	
+	//To Select English language
 	@When("user select English language")
 	public void user_select_english_language() {
 		cp=new CoursesPage(driver);
@@ -35,12 +33,15 @@ public class SearchDefinitions extends BaseClass{
 		takeScreenshot("SelectLanguage");
 	   
 	}
+	
+	//To Select Beginner Level
 	@When("user select beginners level")
 	public void user_select_beginners_level() {
 		cp.selectLevel();
 		takeScreenshot("SelectLevel");  
 	}
 
+	//Clicking on First Two Courses
 	@Then("user should click on top two courses")
 	public void user_should_click_on_top_two_courses() {
 		cp.selectCourse();

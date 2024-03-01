@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 8 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\2303838\HackathonProject\CourseeraProject\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">34 methods, 8 failed,   26 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS003_LanguageLearning" class="method navigator-link" hash-for-method="captureAllLanguage">captureAllLanguage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS003_LanguageLearning" class="method navigator-link" hash-for-method="displayLanguagesLevels">displayLanguagesLevels</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS00_Smoke" class="method navigator-link" hash-for-method="verifyBuisenessLink">verifyBuisenessLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS00_Smoke" class="method navigator-link" hash-for-method="verifyIndividualLink">verifyIndividualLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS00_Smoke" class="method navigator-link" hash-for-method="verifyLanguageOptions">verifyLanguageOptions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS00_Smoke" class="method navigator-link" hash-for-method="verifyLevelOptions">verifyLevelOptions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS00_Smoke" class="method navigator-link" hash-for-method="verifySolutionOptions">verifySolutionOptions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS00_Smoke" class="method navigator-link" hash-for-method="verifyUniversitiesLink">verifyUniversitiesLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS001_SearchCourse" class="method navigator-link" hash-for-method="SearchCourse(Web Development)">SearchCourse(Web Development)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS001_SearchCourse" class="method navigator-link" hash-for-method="addFilters">addFilters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS002_CourseDetails" class="method navigator-link" hash-for-method="captureFirstCourseDetails">captureFirstCourseDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS002_CourseDetails" class="method navigator-link" hash-for-method="captureSecondCourseDetails">captureSecondCourseDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS004_FormRegistrationValid" class="method navigator-link" hash-for-method="clickEnterprise">clickEnterprise</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS005_FormRegistrationInvalid" class="method navigator-link" hash-for-method="clickEnterprise">clickEnterprise</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS001_SearchCourse" class="method navigator-link" hash-for-method="clickTopTwoCourses">clickTopTwoCourses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS002_CourseDetails" class="method navigator-link" hash-for-method="displaySecondCourse">displaySecondCourse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS002_CourseDetails" class="method navigator-link" hash-for-method="displayfirstCourse">displayfirstCourse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS004_FormRegistrationValid" class="method navigator-link" hash-for-method="fillForm">fillForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS005_FormRegistrationInvalid" class="method navigator-link" hash-for-method="fillForm">fillForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS003_LanguageLearning" class="method navigator-link" hash-for-method="getAlllevels">getAlllevels</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS002_CourseDetails" class="method navigator-link" hash-for-method="gotoFirstCourse">gotoFirstCourse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS002_CourseDetails" class="method navigator-link" hash-for-method="gotoSecondCourse">gotoSecondCourse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS00_Smoke" class="method navigator-link" hash-for-method="isSearchBoxDisplayed">isSearchBoxDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS00_Smoke" class="method navigator-link" hash-for-method="launchBrowser">launchBrowser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS005_FormRegistrationInvalid" class="method navigator-link" hash-for-method="navigateToFormPage">navigateToFormPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS004_FormRegistrationValid" class="method navigator-link" hash-for-method="navigateToFormPage">navigateToFormPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS003_LanguageLearning" class="method navigator-link" hash-for-method="navigateToHomepage">navigateToHomepage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS00_Smoke" class="method navigator-link" hash-for-method="navigateURL">navigateURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS00_Smoke" class="method navigator-link" hash-for-method="verifyCourseraHomepage">verifyCourseraHomepage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS00_Smoke" class="method navigator-link" hash-for-method="verifyForCampusLink">verifyForCampusLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS00_Smoke" class="method navigator-link" hash-for-method="verifyResults">verifyResults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS00_Smoke" class="method navigator-link" hash-for-method="verifySearch">verifySearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS00_Smoke" class="method navigator-link" hash-for-method="verifySolutionsLink">verifySolutionsLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TS00_Smoke" class="method navigator-link" hash-for-method="verifypPageLoad">verifypPageLoad</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.TS003_LanguageLearning</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="captureAllLanguage">
+                  </a> <!-- captureAllLanguage -->
+                  <span class="method-name">captureAllLanguage</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;css-jyd7rb&apos;]//span[contains(text(),&apos;Close&apos;)]&quot;}
+  (Session info: chrome=120.0.6099.130)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7ffdfd4f9d591c412804b0dc229f3185, findElement {using=xpath, value=//div[@class=&apos;css-jyd7rb&apos;]//span[contains(text(),&apos;Close&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61414/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ffdfd4f9d591c412804b0dc229f3185
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at pageObjects.CoursesPage.getAllLanguage(CoursesPage.java:90)
+	at testCases.TS003_LanguageLearning.captureAllLanguage(TS003_LanguageLearning.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="displayLanguagesLevels">
+                  </a> <!-- displayLanguagesLevels -->
+                  <span class="method-name">displayLanguagesLevels</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;java.util.List.size()&quot; because &quot;this.arr&quot; is null
+	at testCases.TS003_LanguageLearning.displayLanguagesLevels(TS003_LanguageLearning.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.TS00_Smoke</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBuisenessLink">
+                  </a> <!-- verifyBuisenessLink -->
+                  <span class="method-name">verifyBuisenessLink</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Employee Training and Development Programs | Coursera for Business] but found [Top Web Development Courses - Learn Web Development Online]
+	at testCases.TS00_Smoke.verifyBuisenessLink(TS00_Smoke.java:108)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIndividualLink">
+                  </a> <!-- verifyIndividualLink -->
+                  <span class="method-name">verifyIndividualLink</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Coursera | Degrees, Certificates, &amp; Free Online Courses] but found [Top Web Development Courses - Learn Web Development Online]
+	at testCases.TS00_Smoke.verifyIndividualLink(TS00_Smoke.java:99)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLanguageOptions">
+                  </a> <!-- verifyLanguageOptions -->
+                  <span class="method-name">verifyLanguageOptions</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;css-jyd7rb&apos;]//span[contains(text(),&apos;Close&apos;)]&quot;}
+  (Session info: chrome=120.0.6099.130)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7ffdfd4f9d591c412804b0dc229f3185, findElement {using=xpath, value=//div[@class=&apos;css-jyd7rb&apos;]//span[contains(text(),&apos;Close&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61414/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ffdfd4f9d591c412804b0dc229f3185
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at pageObjects.CoursesPage.getAllLanguage(CoursesPage.java:90)
+	at testCases.TS00_Smoke.verifyLanguageOptions(TS00_Smoke.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLevelOptions">
+                  </a> <!-- verifyLevelOptions -->
+                  <span class="method-name">verifyLevelOptions</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at testCases.TS00_Smoke.verifyLevelOptions(TS00_Smoke.java:91)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySolutionOptions">
+                  </a> <!-- verifySolutionOptions -->
+                  <span class="method-name">verifySolutionOptions</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: Solutions (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61414/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ffdfd4f9d591c412804b0dc229f3185
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pageObjects.HomePage.clickSolutions(HomePage.java:79)
+	at testCases.TS00_Smoke.verifySolutionOptions(TS00_Smoke.java:121)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUniversitiesLink">
+                  </a> <!-- verifyUniversitiesLink -->
+                  <span class="method-name">verifyUniversitiesLink</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Online Learning Platform for Universities | Coursera] but found [Top Web Development Courses - Learn Web Development Online]
+	at testCases.TS00_Smoke.verifyUniversitiesLink(TS00_Smoke.java:115)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TS005_FormRegistrationInvalid</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickEnterprise">
+                  </a> <!-- clickEnterprise -->
+                  <span class="method-name">clickEnterprise</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fillForm">
+                  </a> <!-- fillForm -->
+                  <span class="method-name">fillForm</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToFormPage">
+                  </a> <!-- navigateToFormPage -->
+                  <span class="method-name">navigateToFormPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TS001_SearchCourse</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchCourse(Web Development)">
+                  </a> <!-- SearchCourse(Web Development) -->
+                  <span class="method-name">SearchCourse</span>
+                  <span class="parameters">(Web Development)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addFilters">
+                  </a> <!-- addFilters -->
+                  <span class="method-name">addFilters</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickTopTwoCourses">
+                  </a> <!-- clickTopTwoCourses -->
+                  <span class="method-name">clickTopTwoCourses</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TS002_CourseDetails</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="captureFirstCourseDetails">
+                  </a> <!-- captureFirstCourseDetails -->
+                  <span class="method-name">captureFirstCourseDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="captureSecondCourseDetails">
+                  </a> <!-- captureSecondCourseDetails -->
+                  <span class="method-name">captureSecondCourseDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="displaySecondCourse">
+                  </a> <!-- displaySecondCourse -->
+                  <span class="method-name">displaySecondCourse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="displayfirstCourse">
+                  </a> <!-- displayfirstCourse -->
+                  <span class="method-name">displayfirstCourse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="gotoFirstCourse">
+                  </a> <!-- gotoFirstCourse -->
+                  <span class="method-name">gotoFirstCourse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="gotoSecondCourse">
+                  </a> <!-- gotoSecondCourse -->
+                  <span class="method-name">gotoSecondCourse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TS003_LanguageLearning</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAlllevels">
+                  </a> <!-- getAlllevels -->
+                  <span class="method-name">getAlllevels</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToHomepage">
+                  </a> <!-- navigateToHomepage -->
+                  <span class="method-name">navigateToHomepage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TS00_Smoke</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="isSearchBoxDisplayed">
+                  </a> <!-- isSearchBoxDisplayed -->
+                  <span class="method-name">isSearchBoxDisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="launchBrowser">
+                  </a> <!-- launchBrowser -->
+                  <span class="method-name">launchBrowser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateURL">
+                  </a> <!-- navigateURL -->
+                  <span class="method-name">navigateURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCourseraHomepage">
+                  </a> <!-- verifyCourseraHomepage -->
+                  <span class="method-name">verifyCourseraHomepage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyForCampusLink">
+                  </a> <!-- verifyForCampusLink -->
+                  <span class="method-name">verifyForCampusLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyResults">
+                  </a> <!-- verifyResults -->
+                  <span class="method-name">verifyResults</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearch">
+                  </a> <!-- verifySearch -->
+                  <span class="method-name">verifySearch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySolutionsLink">
+                  </a> <!-- verifySolutionsLink -->
+                  <span class="method-name">verifySolutionsLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifypPageLoad">
+                  </a> <!-- verifypPageLoad -->
+                  <span class="method-name">verifypPageLoad</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TS004_FormRegistrationValid</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickEnterprise">
+                  </a> <!-- clickEnterprise -->
+                  <span class="method-name">clickEnterprise</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fillForm">
+                  </a> <!-- fillForm -->
+                  <span class="method-name">fillForm</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToFormPage">
+                  </a> <!-- navigateToFormPage -->
+                  <span class="method-name">navigateToFormPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\2303838\HackathonProject\CourseeraProject\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utilities.ExtentReportManager&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;parameter name=&quot;Course&quot; value=&quot;Web Development&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.TS00_Smoke&quot;/&gt;
+      &lt;class name=&quot;testCases.TS001_SearchCourse&quot;/&gt;
+      &lt;class name=&quot;testCases.TS002_CourseDetails&quot;/&gt;
+      &lt;class name=&quot;testCases.TS003_LanguageLearning&quot;/&gt;
+      &lt;class name=&quot;testCases.TS004_FormRegistrationValid&quot;/&gt;
+      &lt;class name=&quot;testCases.TS005_FormRegistrationInvalid&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(34);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'fillForm')
+data.setCell(0, 2, 'testCases.TS004_FormRegistrationValid')
+data.setCell(0, 3, 56458);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'SearchCourse')
+data.setCell(1, 2, 'testCases.TS001_SearchCourse')
+data.setCell(1, 3, 54579);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'navigateToHomepage')
+data.setCell(2, 2, 'testCases.TS003_LanguageLearning')
+data.setCell(2, 3, 53201);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifySearch')
+data.setCell(3, 2, 'testCases.TS00_Smoke')
+data.setCell(3, 3, 50021);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifySolutionOptions')
+data.setCell(4, 2, 'testCases.TS00_Smoke')
+data.setCell(4, 3, 33318);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifySolutionsLink')
+data.setCell(5, 2, 'testCases.TS00_Smoke')
+data.setCell(5, 3, 26944);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'navigateToFormPage')
+data.setCell(6, 2, 'testCases.TS004_FormRegistrationValid')
+data.setCell(6, 3, 26414);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'navigateToFormPage')
+data.setCell(7, 2, 'testCases.TS005_FormRegistrationInvalid')
+data.setCell(7, 3, 26107);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'clickEnterprise')
+data.setCell(8, 2, 'testCases.TS004_FormRegistrationValid')
+data.setCell(8, 3, 25557);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'fillForm')
+data.setCell(9, 2, 'testCases.TS005_FormRegistrationInvalid')
+data.setCell(9, 3, 25076);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyCourseraHomepage')
+data.setCell(10, 2, 'testCases.TS00_Smoke')
+data.setCell(10, 3, 25073);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'navigateURL')
+data.setCell(11, 2, 'testCases.TS00_Smoke')
+data.setCell(11, 3, 25059);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'clickEnterprise')
+data.setCell(12, 2, 'testCases.TS005_FormRegistrationInvalid')
+data.setCell(12, 3, 24920);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyLanguageOptions')
+data.setCell(13, 2, 'testCases.TS00_Smoke')
+data.setCell(13, 3, 24763);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyForCampusLink')
+data.setCell(14, 2, 'testCases.TS00_Smoke')
+data.setCell(14, 3, 23738);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'captureAllLanguage')
+data.setCell(15, 2, 'testCases.TS003_LanguageLearning')
+data.setCell(15, 3, 10025);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'captureFirstCourseDetails')
+data.setCell(16, 2, 'testCases.TS002_CourseDetails')
+data.setCell(16, 3, 6990);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'clickTopTwoCourses')
+data.setCell(17, 2, 'testCases.TS001_SearchCourse')
+data.setCell(17, 3, 6594);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'captureSecondCourseDetails')
+data.setCell(18, 2, 'testCases.TS002_CourseDetails')
+data.setCell(18, 3, 5413);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifyLevelOptions')
+data.setCell(19, 2, 'testCases.TS00_Smoke')
+data.setCell(19, 3, 3372);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'addFilters')
+data.setCell(20, 2, 'testCases.TS001_SearchCourse')
+data.setCell(20, 3, 1037);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'gotoFirstCourse')
+data.setCell(21, 2, 'testCases.TS002_CourseDetails')
+data.setCell(21, 3, 564);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'getAlllevels')
+data.setCell(22, 2, 'testCases.TS003_LanguageLearning')
+data.setCell(22, 3, 208);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verifyIndividualLink')
+data.setCell(23, 2, 'testCases.TS00_Smoke')
+data.setCell(23, 3, 203);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'isSearchBoxDisplayed')
+data.setCell(24, 2, 'testCases.TS00_Smoke')
+data.setCell(24, 3, 95);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'verifyResults')
+data.setCell(25, 2, 'testCases.TS00_Smoke')
+data.setCell(25, 3, 85);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'verifyBuisenessLink')
+data.setCell(26, 2, 'testCases.TS00_Smoke')
+data.setCell(26, 3, 85);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'verifypPageLoad')
+data.setCell(27, 2, 'testCases.TS00_Smoke')
+data.setCell(27, 3, 71);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'verifyUniversitiesLink')
+data.setCell(28, 2, 'testCases.TS00_Smoke')
+data.setCell(28, 3, 69);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'gotoSecondCourse')
+data.setCell(29, 2, 'testCases.TS002_CourseDetails')
+data.setCell(29, 3, 32);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'launchBrowser')
+data.setCell(30, 2, 'testCases.TS00_Smoke')
+data.setCell(30, 3, 9);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'displayLanguagesLevels')
+data.setCell(31, 2, 'testCases.TS003_LanguageLearning')
+data.setCell(31, 3, 3);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'displayfirstCourse')
+data.setCell(32, 2, 'testCases.TS002_CourseDetails')
+data.setCell(32, 3, 2);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'displaySecondCourse')
+data.setCell(33, 2, 'testCases.TS002_CourseDetails')
+data.setCell(33, 3, 2);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 8 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">10 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TS005_FormRegistrationInvalid</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setupDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TS001_SearchCourse</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setupDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TS002_CourseDetails</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setupDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TS003_LanguageLearning</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setupDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.TS004_FormRegistrationValid</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setupDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TS00_Smoke</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setupDriver(Chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">18117 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">navigateURL</span>
+                <span class="method-start">18472 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifypPageLoad</span>
+                <span class="method-start">43765 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyCourseraHomepage</span>
+                <span class="method-start">44071 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">isSearchBoxDisplayed</span>
+                <span class="method-start">69405 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySearch</span>
+                <span class="method-start">69712 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyResults</span>
+                <span class="method-start">120049 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyLanguageOptions</span>
+                <span class="method-start">120432 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyLevelOptions</span>
+                <span class="method-start">145537 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyIndividualLink</span>
+                <span class="method-start">149318 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyBuisenessLink</span>
+                <span class="method-start">149820 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyUniversitiesLink</span>
+                <span class="method-start">150151 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifySolutionOptions</span>
+                <span class="method-start">150465 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySolutionsLink</span>
+                <span class="method-start">184076 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyForCampusLink</span>
+                <span class="method-start">211315 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TS001_SearchCourse</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">SearchCourse(Web Development)</span>
+                <span class="method-start">235639 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addFilters</span>
+                <span class="method-start">290546 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickTopTwoCourses</span>
+                <span class="method-start">291761 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TS002_CourseDetails</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">gotoFirstCourse</span>
+                <span class="method-start">298781 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">captureFirstCourseDetails</span>
+                <span class="method-start">323142 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">displayfirstCourse</span>
+                <span class="method-start">330325 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">gotoSecondCourse</span>
+                <span class="method-start">330529 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">captureSecondCourseDetails</span>
+                <span class="method-start">330869 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">displaySecondCourse</span>
+                <span class="method-start">336474 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TS003_LanguageLearning</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">navigateToHomepage</span>
+                <span class="method-start">336673 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">captureAllLanguage</span>
+                <span class="method-start">390181 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getAlllevels</span>
+                <span class="method-start">400534 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">displayLanguagesLevels</span>
+                <span class="method-start">400975 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TS004_FormRegistrationValid</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">clickEnterprise</span>
+                <span class="method-start">401278 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">navigateToFormPage</span>
+                <span class="method-start">427415 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">fillForm</span>
+                <span class="method-start">454487 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TS005_FormRegistrationInvalid</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">clickEnterprise</span>
+                <span class="method-start">511226 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">navigateToFormPage</span>
+                <span class="method-start">536793 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">fillForm</span>
+                <span class="method-start">563461 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TS00_Smoke</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">588754 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

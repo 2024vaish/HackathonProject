@@ -2,17 +2,10 @@ package stepDefinition;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-
-import org.openqa.selenium.WebDriver;
-
 import factory.BaseClass;
 import io.cucumber.java.en.*;
 import pageObjects.CourseDetailsPage;
-import pageObjects.CoursesPage;
-import pageObjects.HomePage;
 import utilities.ExcelUtils;
 
 public class DetailsSteps extends BaseClass {
@@ -24,13 +17,14 @@ public class DetailsSteps extends BaseClass {
 	List<String> courseOne=new ArrayList<>();
 	List<String> courseTwo=new ArrayList<>();
 	
-
+	
 	@Given("user should be on first course page")
 	public void user_should_be_on_first_course_page() {
+		logger.info("Validating First Course Details");
 		cdp=new CourseDetailsPage(driver);
 		cdp.switchToWindow(1);
 	}
-
+	//First Course Details
 	@When("user capture the first course details")
 	public void user_capture_the_first_course_details() {
 		courseName=cdp.getCourseName();
@@ -40,14 +34,14 @@ public class DetailsSteps extends BaseClass {
 		courseOne.add(courseRating);
 		courseOne.add(courseDuration);
 		try {
-			ExcelUtils.setCellData("courseDetails","courses", 1, courseOne);
+			ExcelUtils.writeToExcel("courseDetails","courses", 1, courseOne);
 		} catch (IOException e) {}
 		takeScreenshot("Course1");
 	}
 
 	@Then("display the first course details")
 	public void display_the_first_course_details() {
-		System.out.println("\n*******************Printing First Course Details*******************");
+		System.out.println("\n*******************Printing First Course Details*******************\n");
 		System.out.println("Course Name:- "+courseName);
 		System.out.println("Course Ratings:- "+courseRating);
 		System.out.println("Course Duration:- "+courseDuration);	
@@ -56,10 +50,12 @@ public class DetailsSteps extends BaseClass {
 
 	@Given("user should be on second course page")
 	public void user_should_be_on_second_course_page() {
-		cdp.switchToWindow(2);
-	    
+		logger.info("Validating Second Course Details");
+		cdp.switchToWindow(2)
+;	    
 	}
-
+	
+	//Second Course Details
 	@When("user capture the second course details")
 	public void user_capture_the_second_course_details() {
 		courseName=cdp.getCourseName();
@@ -73,12 +69,12 @@ public class DetailsSteps extends BaseClass {
 
 	@Then("display the second course details")
 	public void display_the_secind_course_details() {
-		System.out.println("\n*******************Printing Second Course Details*******************");
+		System.out.println("\n*******************Printing Second Course Details*******************\n");
 		System.out.println("Course Name:- "+courseName);
 		System.out.println("Course Ratings:- "+courseRating);
 		System.out.println("Course Duration:- "+courseDuration);	
 		try {
-			ExcelUtils.setCellData("courseDetails","courses", 2, courseTwo);
+			ExcelUtils.writeToExcel("courseDetails","courses", 2, courseTwo);
 		} catch (IOException e) {}
 			
 		

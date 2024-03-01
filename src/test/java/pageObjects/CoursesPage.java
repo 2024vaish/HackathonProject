@@ -4,6 +4,7 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -32,9 +33,9 @@ public class CoursesPage extends BasePage {
 	WebElement result;
 	
 	By allLanguages=By.xpath("//div[starts-with(@id, 'checkbox-group')]/div");
-	By allLevels=By.xpath("//*[@data-testid='search-filter-group-Level']//div[@class='css-zf4w52']");
+	By allLevels=By.xpath("//*[@data-testid='search-filter-group-Level']//div[@class='cds-checkboxAndRadio-labelText']");
 	
-	@FindBy(xpath = "//div[starts-with(@id, 'checkbox-group')]/div/label/div/span/span")
+	@FindBy(xpath = "//div[starts-with(@id, 'checkbox-group')]//span[text()='English']")
 	WebElement language;
 	
 	@FindBy(xpath="//div[starts-with(@class,'css-1hllf5q')]/button[1]")
@@ -45,23 +46,33 @@ public class CoursesPage extends BasePage {
 	
 	@FindBy(xpath="//div[@data-testid='search-filter-group-Level']//input")
 	WebElement chkBox;
-		
-	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
+	
+	@FindBy(xpath="//div[@data-testid='active-filter-items']/button[1]")
+	WebElement filter;
+	
+	@FindBy(xpath="(//div[@class='cds-CommonCard-clickArea']//a)[1]")
+	WebElement anycourse;
+	
+	@FindBy(xpath = "(//div[@class='cds-CommonCard-clickArea'])[1]")
+	WebElement divscroll;
+	
+	List<WebElement>levels;
+	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(50));
 	public void selectLevel() {
 		level.click();
 		
 	}
 	public void selectLanguage() {
-		
+		//showmore.click();
 		language.click();
 		applyBtn.click();
 	}
 	
 	public void selectCourse(){
-		scroll(firstCourse);
+		((JavascriptExecutor) driver).executeScript("window.scrollTo(0, -document.body.scrollHeight)");
 		hover(firstCourse);
 		firstCourse.click();
-		scroll(secondCourse);
+		
 		hover(secondCourse);
 		secondCourse.click();
 	}
@@ -69,7 +80,7 @@ public class CoursesPage extends BasePage {
 	
 	public List<String> getAllLanguage() {
 		
-		List<WebElement>languages=driver.findElements(allLanguages);
+		List<WebElement> languages=driver.findElements(allLanguages);
 		List<String>arr=new ArrayList<>();
 		for(WebElement ele:languages)
 		{
@@ -81,18 +92,21 @@ public class CoursesPage extends BasePage {
 	}
 	
 	public List<String>getAllLevels(){
-		List<WebElement>levels=driver.findElements(allLevels);
+		levels=driver.findElements(allLevels);
 		List<String>arr=new ArrayList<>();
 		for(WebElement ele:levels)
 		{
 			arr.add(ele.getText());
 		}
+	
 		return arr;
 		
 	}
 	
+	
 	public void clickShowMore() {
 		showmore.click();
+		
 	}
 	
 	public boolean checkChkBox() {
@@ -110,7 +124,20 @@ public class CoursesPage extends BasePage {
 		
 	}
 	
-	public void closePopup() {
-		//closeBtn.click();
+	public String checkLanguageFilter() {
+		return filter.getText();
+		
+	}
+	public String checkLevelFilter() {
+		return filter.getText();
+		
+	}
+	public void clickCourse() {
+		wait.until(ExpectedConditions.visibilityOf(anycourse));
+		
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		scroll(divscroll);
+		System.out.println(anycourse.isDisplayed());
+		anycourse.click();
 	}
 }

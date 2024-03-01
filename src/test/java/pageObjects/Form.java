@@ -112,9 +112,8 @@ public class Form extends BasePage{
 	
 	public void setDepartment() {
 		try {
-			
 			if(department.isDisplayed())
-		selectOption(department);
+				selectOption(department);
 		}catch(NoSuchElementException E) {}
 	}
 	

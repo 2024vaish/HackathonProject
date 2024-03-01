@@ -26,10 +26,8 @@ public class ExcelUtils {
 	public static CellStyle style; 
 	public static XSSFFont font;
 	
-	public static void setCellData(String xlfile,String xlsheet,int rownum,List<String>arr)throws IOException
+	public static void writeToExcel(String xlfile,String xlsheet,int rownum,List<String>arr)throws IOException
 	{	
-		
-		
 		fi=new FileInputStream(System.getProperty("user.dir")+"\\testdata\\courseDetails.xlsx");
 		wb=new XSSFWorkbook(fi);
 		
@@ -37,9 +35,9 @@ public class ExcelUtils {
 			ws=wb.createSheet(xlsheet);
 		else
 			ws=wb.getSheet(xlsheet);
-		setStyle(0,0);
-		setStyle(0,1);
-		setStyle(0,2);
+		//setStyle(0,0);
+		//setStyle(0,1);
+		//setStyle(0,2);
 		row=ws.createRow(rownum);
 		
 		int colnum=0;
@@ -63,8 +61,10 @@ public class ExcelUtils {
 	public static void setStyle(int rownum,int colnum) throws IOException
 	{
 		
-		row=ws.createRow(rownum);
+		
+		row=ws.getRow(rownum);
 		cell=row.createCell(colnum);
+		
 		
 		style=wb.createCellStyle();
 		font = wb.createFont();
@@ -78,7 +78,7 @@ public class ExcelUtils {
 		
 	}
 
-	public static void setCellData(String string, String xlsheet, List<String> arr) {
+	public static void writeToExcel(String string, String xlsheet, List<String> arr) {
 		try {
 			fi=new FileInputStream(System.getProperty("user.dir")+"\\testdata\\courseDetails.xlsx");
 		
@@ -87,7 +87,7 @@ public class ExcelUtils {
 			ws=wb.createSheet(xlsheet);
 		else
 			ws=wb.getSheet(xlsheet);
-		setStyle(0,0);
+		//setStyle(0,0);
 		int colnum=0;
 		int r=1;
 		for(String s:arr) {

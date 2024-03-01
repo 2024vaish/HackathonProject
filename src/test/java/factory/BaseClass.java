@@ -35,9 +35,11 @@ public class BaseClass {
 	public static  WebDriver setupDriver() {
 		logger=LogManager.getLogger();
 		
+		//To set the execution environment
 		String browser=getProperties().getProperty("browser");
 		if(getProperties().getProperty("execution_env").equalsIgnoreCase("remote"))
 		{
+			logger.info("Setting up the remote environment");
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			if (getProperties().getProperty("os").equalsIgnoreCase("windows")) {
 			    capabilities.setPlatform(Platform.WIN11);
@@ -47,6 +49,7 @@ public class BaseClass {
 			    System.out.println("No matching OS..");
 			 }
 			
+			//To set the browser
 			
 			if(browser.equals("Chrome"))
 				capabilities.setBrowserName("chrome");
@@ -65,6 +68,7 @@ public class BaseClass {
 			
 		else if(getProperties().getProperty("execution_env").equalsIgnoreCase("local"))
 		{
+			logger.info("Setting up the local environment");
 			switch(getProperties().getProperty("browser").toLowerCase()) 
 			{
 			case "chrome":
@@ -105,7 +109,7 @@ public class BaseClass {
 	public void takeScreenshot(String name) {
 	TakesScreenshot ts=(TakesScreenshot)driver;
 	File src=ts.getScreenshotAs(OutputType.FILE);
-	File target=new File(System.getProperty("user.dir")+"//screenshots//"+name+".png");
+	File target=new File(System.getProperty("user.dir")+"//Screenshots//"+name+".png");
 	try {
 		FileUtils.copyFile(src, target);
 	} catch (IOException e) {}
