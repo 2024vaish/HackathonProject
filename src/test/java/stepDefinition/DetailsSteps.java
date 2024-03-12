@@ -33,6 +33,8 @@ public class DetailsSteps extends BaseClass {
 		courseOne.add(courseName);
 		courseOne.add(courseRating);
 		courseOne.add(courseDuration);
+		
+		//Storing courseDetails to excel
 		try {
 			ExcelUtils.writeToExcel("courseDetails","courses", 1, courseOne);
 		} catch (IOException e) {}
@@ -73,6 +75,8 @@ public class DetailsSteps extends BaseClass {
 		System.out.println("Course Name:- "+courseName);
 		System.out.println("Course Ratings:- "+courseRating);
 		System.out.println("Course Duration:- "+courseDuration);	
+		
+		//Storing courseDetails to excel
 		try {
 			ExcelUtils.writeToExcel("courseDetails","courses", 2, courseTwo);
 		} catch (IOException e) {}

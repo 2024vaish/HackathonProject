@@ -5,20 +5,20 @@ import org.junit.runner.RunWith;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
-import io.cucumber.testng.AbstractTestNGCucumberTests;
+
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = {".\\src\\test\\resources\\FeatureFiles\\f001_Smoke.feature",".\\src\\test\\resources\\FeatureFiles\\f002_Main.feature",".\\src\\test\\resources\\FeatureFiles\\f003_Regression.feature"},
-							
+@CucumberOptions(features = {".\\src\\test\\resources\\FeatureFiles\\f001_smoke.feature",".\\src\\test\\resources\\FeatureFiles\\f002_Main.feature",".\\src\\test\\resources\\FeatureFiles\\f003_Regression.feature"},
 				//features={"@target/rerun.txt"},
 				glue = "stepDefinition", 
 				plugin = 	{ "pretty",
-							"html:reports/myreport.html", "rerun:target/rerun.txt",
+							"html:reports/myreport.html",
 							"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 							"rerun:target/rerun.txt"}, 
 				dryRun = false, 
 				monochrome = true, 
 				publish = true)
+				//tags="@Sanity")
 
 
 public class TestRun{

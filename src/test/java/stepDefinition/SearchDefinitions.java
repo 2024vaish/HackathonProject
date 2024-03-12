@@ -28,6 +28,7 @@ public class SearchDefinitions extends BaseClass{
 	//To Select English language
 	@When("user select English language")
 	public void user_select_english_language() {
+		logger.info("Applying Language Filter");
 		cp=new CoursesPage(driver);
 		cp.selectLanguage();
 		takeScreenshot("SelectLanguage");
@@ -37,6 +38,7 @@ public class SearchDefinitions extends BaseClass{
 	//To Select Beginner Level
 	@When("user select beginners level")
 	public void user_select_beginners_level() {
+		logger.info("Applying Level Filter");
 		cp.selectLevel();
 		takeScreenshot("SelectLevel");  
 	}

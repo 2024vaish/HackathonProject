@@ -1,7 +1,7 @@
 @Regression
 Feature: Regression Feature
 
-	@Regression,Sanity
+	@Regression @Sanity
   Scenario: Validate Search Functionality
 	Given user should be on courssera homepage
 	When user search for "Web Development" course
@@ -22,7 +22,7 @@ Feature: Regression Feature
 	And user select level as Beginner 
 	Then user verifies Beginner filter displayed at Top	
 	
-	@Regression,Sanity
+	@Regression @Sanity
 	Scenario: Validate Course Details
 	Given user should be on courssera homepage
 	When user search for "Web Development" course
@@ -31,12 +31,12 @@ Feature: Regression Feature
 	Then user should get the coursedetails.
 	
 	
-	@Regression
+	@Regression @Sanity
 	Scenario: Validate Form Registration
 	Given user should navigate to form page
 	When user fills the form with "<fname>","<lname>","<email>","<phone>","<InstName>","<needs>","<status>"
 	And user submits the form
-	Then user should capture "<status>" message
+	Then user should capture correct "<status>" message
 	
 	 Examples: 
       | fname | lname | email              | phone      | InstName | needs | status  |

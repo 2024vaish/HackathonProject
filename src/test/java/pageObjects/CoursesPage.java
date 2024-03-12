@@ -134,10 +134,7 @@ public class CoursesPage extends BasePage {
 	}
 	public void clickCourse() {
 		wait.until(ExpectedConditions.visibilityOf(anycourse));
-		
-		JavascriptExecutor js = (JavascriptExecutor)driver;
 		scroll(divscroll);
-		System.out.println(anycourse.isDisplayed());
 		anycourse.click();
 	}
 }

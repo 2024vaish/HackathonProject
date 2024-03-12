@@ -31,11 +31,11 @@ public class CourseDetailsPage extends BasePage{
 	}
 	
 	public String getCourseName() {
-		try {
-			Thread.sleep(5000);
+		//try {
+		//	Thread.sleep(5000);
 			
 
-		} catch (InterruptedException e) {}
+		//} catch (InterruptedException e) {}
 		String s=courseName.getText();
 		return s;
 	}

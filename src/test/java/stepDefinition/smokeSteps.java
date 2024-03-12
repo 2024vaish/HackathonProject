@@ -1,6 +1,6 @@
 package stepDefinition;
 
-import org.testng.Assert;
+import org.junit.Assert;
 
 import factory.BaseClass;
 import io.cucumber.java.en.Given;
@@ -26,6 +26,7 @@ public class smokeSteps extends BaseClass{
 		Assert.assertEquals(flag, true);
 	  
 	}
+	
 	//To navigate to url
 	@When("user navigates to url")
 	public void user_navigates_to_url() {
@@ -43,6 +44,7 @@ public class smokeSteps extends BaseClass{
 
 	@Then("search box should displayed")
 	public void search_box_should_displayed() {
+		logger.info("Validating Search Box");
 		hp=new HomePage(driver);
 		boolean flag=hp.searchBoxDisplay();
 		Assert.assertEquals(flag, true);
@@ -65,6 +67,7 @@ public class smokeSteps extends BaseClass{
 
 	@Then("user should see all courses.")
 	public void user_should_see_all_courses() {
+		logger.info("Validating Search Icon");
 		cp=new CoursesPage(driver);
 	    boolean flag=cp.checkResults();
 	    Assert.assertEquals(flag, false);
@@ -72,6 +75,7 @@ public class smokeSteps extends BaseClass{
 
 	@When("user clicks on for individual link")
 	public void user_clicks_on_for_individual_link() {
+		logger.info("Validating Navigation links");
 		hp=new HomePage(driver);
 		hp.clickNav1();
 	}
@@ -141,7 +145,6 @@ public class smokeSteps extends BaseClass{
 		Assert.assertEquals(flag, true);
 	    
 	}
-	
 
 
 	@Given("user should see buieness page")
@@ -166,8 +169,6 @@ public class smokeSteps extends BaseClass{
 		hp=new HomePage(driver);
 		hp.clickSolutions();
 	}
-
-	
 	
 	@When("user clicks on the solution dropdown")
 	public void user_clicks_on_the_solution_dropdown() {

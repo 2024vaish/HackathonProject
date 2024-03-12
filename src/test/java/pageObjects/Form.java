@@ -74,6 +74,8 @@ public class Form extends BasePage{
 
 	@FindBy(xpath="//div[@class='mktoError']")
 	WebElement errorMsg;
+	
+	
 	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
 	
 	public void scrolltoForm() {
@@ -162,7 +164,6 @@ public class Form extends BasePage{
 	
 	public void clickSubmit() {
 		scroll(country);
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	    wait.until(ExpectedConditions.elementToBeClickable(submitBtn));
 		submitBtn.click();
 		

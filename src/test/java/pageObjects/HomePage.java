@@ -45,17 +45,15 @@ public class HomePage extends BasePage {
 	@FindBy(xpath="//iframe[@class='drift-frame-controller']")
 	WebElement chatFrame;
 	
-	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(30));
+	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
 	public void submitSearch(String s) {
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//form[@class='search-form']//input")));
 		searchBox.clear();
 		searchBox.sendKeys(s);
 	}
 	
 	public void clickSearchIcon() {
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {}
-		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
+
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='nostyle search-button']/div")));	
 		searchIcon.click();
 	}
@@ -78,8 +76,6 @@ public class HomePage extends BasePage {
 		Actions actions = new Actions(driver);
 		wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Solutions")));
 		actions.moveToElement(solutionLink).click().perform();
-		
-		//solutionLink.click();
 	}
 	
 	public void closeChat() {
@@ -87,7 +83,6 @@ public class HomePage extends BasePage {
 		chatWindow.click();
 	}
 	public void clickForCampus() {
-		//closeChat();
 		forCampusLink.click();
 	}
 

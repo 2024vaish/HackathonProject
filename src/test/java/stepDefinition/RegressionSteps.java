@@ -1,6 +1,6 @@
 package stepDefinition;
 
-import org.testng.Assert;
+import org.junit.Assert;
 
 import factory.BaseClass;
 import io.cucumber.java.en.*;

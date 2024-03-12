@@ -20,12 +20,14 @@ public class languageSteps extends BaseClass {
 		//To Search for Language learning
 		@When("User look for {string}")
 		public void user_look_for(String string) {
+			logger.info("Searching For Language learning");
 			hp.submitSearch(string);
 			hp.clickSearchIcon();  
 		}
 		//Get All Languages
 		@When("user extract all languages")
 		public void user_extract_all_languages() {
+			logger.info("Capturing all  Languages ");
 			cp=new CoursesPage(driver);
 			arr=cp.getAllLanguage();
 			//Store data to Excel
@@ -36,6 +38,7 @@ public class languageSteps extends BaseClass {
 		//Get All levels
 		@When("user extract all levels")
 		public void user_extract_all_levels() {	
+			logger.info("Capturing all  Levels ");
 			arr2 = cp.getAllLevels(); 
 			System.out.println("Total Count Of Levels:-"+arr2.size());
 			//Store data to Excel
@@ -44,7 +47,7 @@ public class languageSteps extends BaseClass {
 
 		@Then("user display langauge and level information")
 		public void user_display_langauge_and_level_information() {
-			
+			logger.info("Displaying Language and level details");
 			System.out.println("\n*********************All available languages*********************\n");
 			System.out.println("Total Count Of Languages:-"+arr.size());
 			for(String s:arr) {
@@ -58,5 +61,7 @@ public class languageSteps extends BaseClass {
 			}
 		   
 		}
+		
+		
 
 }
